@@ -1,0 +1,205 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #c8102e 0%, #8b0000 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: "⚽";
+            position: absolute;
+            font-size: 80px;
+            opacity: 0.1;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .header::after {
+            content: "⚽";
+            position: absolute;
+            font-size: 80px;
+            opacity: 0.1;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .header .year {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .description {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #c8102e;
+            margin-bottom: 30px;
+        }
+        
+        .description h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .description p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .description ul {
+            margin-left: 20px;
+            color: #555;
+            line-height: 2;
+        }
+        
+        .instructions {
+            background: #fff9e6;
+            border: 2px solid #ffd700;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+            color: #666;
+            line-height: 2;
+        }
+        
+        .instructions ol li {
+            margin-bottom: 10px;
+        }
+        
+        .instructions strong {
+            color: #856404;
+        }
+        
+        .format-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .format-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .format-card:hover {
+            border-color: #c8102e;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .format-card .number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #c8102e;
+            margin-bottom: 5px;
+        }
+        
+        .format-card .label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #c8102e 0%, #8b0000 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(200, 16, 46, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        
+        }
+        
+        .footer p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
